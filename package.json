@@ -1,11 +1,15 @@
 {
+  "homepage":"https://Nishanttt17.github.io/online_foodweb",
   "name": "namste_react",
   "version": "1.0.0",
   "description": "this is namaste react by akshay saini",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "keywords": [
     "nishant",
@@ -21,6 +25,7 @@
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.6",
     "babel-jest": "^29.7.0",
+    "gh-pages": "^6.1.1",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "parcel": "^2.12.0",
